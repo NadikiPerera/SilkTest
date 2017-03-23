@@ -1,0 +1,6 @@
+<ObjectMap version="1">
+  <ObjectMapEntry id="WebBrowser" locator="//BrowserApplication" urlPattern="">
+    <ObjectMapEntry id="Close" locator="//PushButton[@caption=&apos;Close&apos;]"/>
+    <ObjectMapEntry id="Maximize" locator="//PushButton[@caption=&apos;Maximize&apos;]"/>
+  </ObjectMapEntry>
+</ObjectMap>

@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>SilkTest.Ntf.VisualStudio2015.UnitTestingExtension</name>
+  </assembly>
+  <members>
+    <member name="T:SilkTest.Ntf.NtfExtensions">
+      <summary>
+            Contains methods that extend the NTF's API when used from Silk4NET (this is the counterpart of the SilkTest.API assembly that extends the NTF API for the Workbench)
+            </summary>
+    </member>
+    <member name="M:SilkTest.Ntf.NtfExtensions.ImageExists(SilkTest.Ntf.TestObject,System.String)">
+      <summary>
+            Returns whether the specified image exists.
+            </summary>
+      <param name="testObject"></param>
+      <param name="imageAsset">a .imageasset file. This file must be an embedded resource in the test assembly.</param>
+      <returns>whether the specified image exists</returns>
+    </member>
+    <member name="M:SilkTest.Ntf.NtfExtensions.ImageExists(SilkTest.Ntf.TestObject,System.String,System.Int32)">
+      <summary>
+            Returns whether the specified image exists.
+            </summary>
+      <param name="testObject"></param>
+      <param name="imageAsset">a .imageasset file. This file must be an embedded resource in the test assembly.</param>
+      <param name="occurrence">For which occurrence of the image the existence should be checked, if there are multiple results. The first occurrence is 1.</param>
+      <returns>whether the specified image exists</returns>
+    </member>
+    <member name="M:SilkTest.Ntf.NtfExtensions.ImageExists(SilkTest.Ntf.TestObject,System.String,System.Int32,SilkTest.Ntf.Rectangle)">
+      <summary>
+            Returns whether the specified image exists.
+            </summary>
+      <param name="testObject"></param>
+      <param name="imageAsset">a .imageasset file. This file must be an embedded resource in the test assembly.</param>
+      <param name="occurrence">For which occurrence of the image the existence should be checked, if there are multiple results. The first occurrence is 1.</param>
+      <param name="searchRectangle">The object-relative rectangle in which to search the image.</param>
+      <returns>whether the specified image exists</returns>
+    </member>
+    <member name="M:SilkTest.Ntf.NtfExtensions.ImageRectangle(SilkTest.Ntf.TestObject,System.String)">
+      <summary>
+            Returns the object-relative rectangle of the specified image.
+            </summary>
+      <param name="testObject"></param>
+      <param name="imageAsset">a .imageasset file. This file must be an embedded resource in the test assembly.</param>
+      <returns>the rectangle of the specified image</returns>
+    </member>
+    <member name="M:SilkTest.Ntf.NtfExtensions.ImageRectangle(SilkTest.Ntf.TestObject,System.String,System.Int32)">
+      <summary>
+            Returns the object-relative rectangle of the specified image.
+            </summary>
+      <param name="testObject"></param>
+      <param name="imageAsset">a .imageasset file. This file must be an embedded resource in the test assembly.</param>
+      <param name="occurrence">For which occurrence of the image the existence should be checked, if there are multiple results. The first occurrence is 1.</param>
+      <returns>the rectangle of the specified image</returns>
+    </member>
+    <member name="M:SilkTest.Ntf.NtfExtensions.ImageRectangle(SilkTest.Ntf.TestObject,System.String,System.Int32,SilkTest.Ntf.Rectangle)">
+      <summary>
+            Returns the object-relative rectangle of the specified image.
+            </summary>
+      <param name="testObject"></param>
+      <param name="imageAsset">a .imageasset file. This file must be an embedded resource in the test assembly.</param>
+      <param name="occurrence">For which occurrence of the image the existence should be checked, if there are multiple results. The first occurrence is 1.</param>
+      <param name="searchRectangle">The object-relative rectangle in which to search the image.</param>
+      <returns>the rectangle of the specified image</returns>
+    </member>
+    <member name="M:SilkTest.Ntf.NtfExtensions.ImageClick(SilkTest.Ntf.TestObject,System.String)">
+      <summary>
+            Clicks in the middle of the specified image.
+            </summary>
+      <param name="testObject"></param>
+      <param name="imageAsset">a .imageasset file. This file must be an embedded resource in the test assembly.</param>
+    </member>
+    <member name="M:SilkTest.Ntf.NtfExtensions.ImageClick(SilkTest.Ntf.TestObject,System.String,SilkTest.Ntf.Point)">
+      <summary>
+            Clicks on the specified image.
+            </summary>
+      <param name="testObject"></param>
+      <param name="imageAsset">a .imageasset file. This file must be an embedded resource in the test assembly.</param>
+      <param name="position">The coordinates at which to click. The coordinates are relative to the upper-left corner of the image. For clicking the middle of the image use ClickPosition.Center.</param>
+    </member>
+    <member name="M:SilkTest.Ntf.NtfExtensions.ImageClick(SilkTest.Ntf.TestObject,System.String,SilkTest.Ntf.Point,System.Int32)">
+      <summary>
+            Clicks on the specified image.
+            </summary>
+      <param name="testObject"></param>
+      <param name="imageAsset">a .imageasset file. This file must be an embedded resource in the test assembly.</param>
+      <param name="position">The coordinates at which to click. The coordinates are relative to the upper-left corner of the image. For clicking the middle of the image use ClickPosition.Center.</param>
+      <param name="occurrence">Which occurrence of the image should be clicked, if there are multiple occurrences. The first occurrence is 1.</param>
+    </member>
+    <member name="M:SilkTest.Ntf.NtfExtensions.ImageClick(SilkTest.Ntf.TestObject,System.String,SilkTest.Ntf.Point,System.Int32,SilkTest.Ntf.ClickType)">
+      <summary>
+            Clicks on the specified image.
+            </summary>
+      <param name="testObject"></param>
+      <param name="imageAsset">a .imageasset file. This file must be an embedded resource in the test assembly.</param>
+      <param name="position">The coordinates at which to click. The coordinates are relative to the upper-left corner of the image. For clicking the middle of the image use ClickPosition.Center.</param>
+      <param name="occurrence">Which occurrence of the image should be clicked, if there are multiple occurrences. The first occurrence is 1.</param>
+      <param name="clickType">The desired mouse action.</param>
+    </member>
+    <member name="M:SilkTest.Ntf.NtfExtensions.ImageClick(SilkTest.Ntf.TestObject,System.String,SilkTest.Ntf.Point,System.Int32,SilkTest.Ntf.ClickType,SilkTest.Ntf.ModifierKeys)">
+      <summary>
+            Clicks on the specified image.
+            </summary>
+      <param name="testObject"></param>
+      <param name="imageAsset">a .imageasset file. This file must be an embedded resource in the test assembly.</param>
+      <param name="position">The coordinates at which to click. The coordinates are relative to the upper-left corner of the image. For clicking the middle of the image use ClickPosition.Center.</param>
+      <param name="occurrence">Which occurrence of the image should be clicked, if there are multiple occurrences. The first occurrence is 1.</param>
+      <param name="clickType">The desired mouse action.</param>
+      <param name="modifiers">The modifier keys (Alt, Shift, Ctrl) to press while clicking.</param>
+    </member>
+    <member name="M:SilkTest.Ntf.NtfExtensions.ImageClick(SilkTest.Ntf.TestObject,System.String,SilkTest.Ntf.Point,System.Int32,SilkTest.Ntf.ClickType,SilkTest.Ntf.ModifierKeys,System.Int32)">
+      <summary>
+            Clicks on the specified image.
+            </summary>
+      <param name="testObject"></param>
+      <param name="imageAsset">a .imageasset file. This file must be an embedded resource in the test assembly.</param>
+      <param name="position">The coordinates at which to click. The coordinates are relative to the upper-left corner of the image. For clicking the middle of the image use ClickPosition.Center.</param>
+      <param name="occurrence">Which occurrence of the image should be clicked, if there are multiple occurrences. The first occurrence is 1.</param>
+      <param name="clickType">The desired mouse action.</param>
+      <param name="modifiers">The modifier keys (Alt, Shift, Ctrl) to press while clicking.</param>
+      <param name="timeout">Maximum time (in ms) to wait for the image to appear</param>
+    </member>
+    <member name="T:SilkTest.Ntf.Silk4NET">
+      <summary>
+            Handles functionality specific to Visual Studio. Currently provides functionality for verifying assets.
+            </summary>
+    </member>
+    <member name="M:SilkTest.Ntf.Silk4NET.VerifyAsset(System.String)">
+      <summary>
+            Executes a verification asset. Throws a VerificationFailedException if the verification does not pass. Throws an ObjectNotFoundException if the UI object to verify cannot be found.
+            </summary>
+      <param name="verificationAsset">The name of the .verification file. The file extension can be omitted.</param>
+    </member>
+    <member name="M:SilkTest.Ntf.Silk4NET.VerifyAsset(SilkTest.Ntf.RemoteAgent,System.String)">
+      <summary>
+            Executes a verification asset. Throws a VerificationFailedException if the verification does not pass. Throws an ObjectNotFoundException if the UI object to verify cannot be found.
+            </summary>
+      <param name="agent">the agent to be used for this call</param>
+      <param name="verificationAsset">The name of the .verification file. The file extension can be omitted.</param>
+    </member>
+    <member name="M:SilkTest.Ntf.Silk4NET.TryVerifyAsset(System.String)">
+      <summary>
+            Executes a verification asset and returns whether the verification passed. Throws an ObjectNotFoundException if the UI object to verify cannot be found.
+            </summary>
+      <param name="verificationAsset">The name of the .verification file. The file extension can be omitted.</param>
+      <returns>Returns whether the verification passed.</returns>
+    </member>
+    <member name="M:SilkTest.Ntf.Silk4NET.TryVerifyAsset(SilkTest.Ntf.RemoteAgent,System.String)">
+      <summary>
+            Executes a verification asset and returns whether the verification passed. Throws an ObjectNotFoundException if the UI object to verify cannot be found.
+            </summary>
+      <param name="agent">the agent to be used for this call</param>
+      <param name="verificationAsset">The name of the .verification file. The file extension can be omitted.</param>
+      <returns>Returns whether the verification passed.</returns>
+    </member>
+    <member name="M:SilkTest.Ntf.VisualStudio.UnitTestingExtension.AbstractSilkExtensionClientSide.TestRunFinished(System.Object,Microsoft.VisualStudio.TestTools.Common.TestRunEventArgs)">
+      <summary>
+            Do not delete, because it will be called via reflection
+            </summary>
+    </member>
+    <member name="T:SilkTest.Ntf.VisualStudio.UnitTestingExtension.SilkExtensionClientSide2010">
+      <summary>
+            This code will be executed in the host process (mstest.exe or Viusal Studio)
+            </summary>
+    </member>
+    <member name="T:SilkTest.Ntf.VisualStudio.UnitTestingExtension.SilkExtensionClientSide2012">
+      <summary>
+            This code will be executed in the host process (vstest.executionengine in mstest.exe or Viusal Studio)
+            </summary>
+    </member>
+    <member name="T:SilkTest.Ntf.VisualStudio.UnitTestingExtension.Resources.Resources">
+      <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+    </member>
+    <member name="P:SilkTest.Ntf.VisualStudio.UnitTestingExtension.Resources.Resources.ResourceManager">
+      <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+    </member>
+    <member name="P:SilkTest.Ntf.VisualStudio.UnitTestingExtension.Resources.Resources.Culture">
+      <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+    </member>
+    <member name="P:SilkTest.Ntf.VisualStudio.UnitTestingExtension.Resources.Resources.Playback_NoImageAsset">
+      <summary>
+              Looks up a localized string similar to '{0}' is not a valid image asset..
+            </summary>
+    </member>
+    <member name="P:SilkTest.Ntf.VisualStudio.UnitTestingExtension.Resources.Resources.Playback_UnknownVerifyAssetError">
+      <summary>
+              Looks up a localized string similar to Unknown verification error occurred..
+            </summary>
+    </member>
+    <member name="P:SilkTest.Ntf.VisualStudio.UnitTestingExtension.Resources.Resources.Silk4NET">
+      <summary>
+              Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+            </summary>
+    </member>
+    <member name="P:SilkTest.Ntf.VisualStudio.UnitTestingExtension.Resources.Resources.Silk4NETExtension_ExpectedException">
+      <summary>
+              Looks up a localized string similar to Expected exception '{0}' was not thrown..
+            </summary>
+    </member>
+    <member name="P:SilkTest.Ntf.VisualStudio.UnitTestingExtension.Resources.Resources.Silk4NETExtension_FileDoesNotExist">
+      <summary>
+              Looks up a localized string similar to TrueLog file is not available..
+            </summary>
+    </member>
+    <member name="P:SilkTest.Ntf.VisualStudio.UnitTestingExtension.Resources.Resources.Silk4NETExtension_FolderDoesNotExist">
+      <summary>
+              Looks up a localized string similar to Folder '{0}' does not exist..
+            </summary>
+    </member>
+    <member name="P:SilkTest.Ntf.VisualStudio.UnitTestingExtension.Resources.Resources.Silk4NETExtension_MessageDialog_Error">
+      <summary>
+              Looks up a localized string similar to Error.
+            </summary>
+    </member>
+    <member name="P:SilkTest.Ntf.VisualStudio.UnitTestingExtension.Resources.Resources.Silk4NETExtension_MessageDialog_Warning">
+      <summary>
+              Looks up a localized string similar to Warning.
+            </summary>
+    </member>
+    <member name="P:SilkTest.Ntf.VisualStudio.UnitTestingExtension.Resources.Resources.Silk4NETExtension_Name">
+      <summary>
+              Looks up a localized string similar to Silk4NET TrueLog.
+            </summary>
+    </member>
+    <member name="P:SilkTest.Ntf.VisualStudio.UnitTestingExtension.Resources.Resources.Silk4NETExtension_NotExecuted">
+      <summary>
+              Looks up a localized string similar to Not executed.
+            </summary>
+    </member>
+    <member name="P:SilkTest.Ntf.VisualStudio.UnitTestingExtension.Resources.Resources.Silk4NETExtension_ResultHeader">
+      <summary>
+              Looks up a localized string similar to TrueLog result:.
+            </summary>
+    </member>
+    <member name="P:SilkTest.Ntf.VisualStudio.UnitTestingExtension.Resources.Resources.Silk4NETExtension_ShowInFolder">
+      <summary>
+              Looks up a localized string similar to Show in folder.
+            </summary>
+    </member>
+    <member name="P:SilkTest.Ntf.VisualStudio.UnitTestingExtension.Resources.Resources.Silk4NETExtension_ShowResultFolder">
+      <summary>
+              Looks up a localized string similar to Show result folder.
+            </summary>
+    </member>
+    <member name="P:SilkTest.Ntf.VisualStudio.UnitTestingExtension.Resources.Resources.Silk4NETExtension_WrongUnitTestingExtensionVersion">
+      <summary>
+              Looks up a localized string similar to Cannot create TrueLog result for test execution. Your project was built against the assembly '{0}'. Make sure that tests are executed within a Visual Studio {1} environment..
+            </summary>
+    </member>
+    <member name="M:SilkTest.Ntf.VisualStudio.UnitTestingExtension.ReflectionUtil.InvokeMethod(System.Object,System.String,System.Object[])">
+      <summary>
+            Invokes a method via reflection and unpacks possible TargetInvocationExceptions.
+            </summary>
+    </member>
+    <member name="M:SilkTest.Ntf.VisualStudio.UnitTestingExtension.ReflectionUtil.SetProperty(System.Object,System.String,System.Object)">
+      <summary>
+            Writes a property via reflection and unpacks possible TargetInvocationExceptions.
+            </summary>
+    </member>
+    <member name="M:SilkTest.Ntf.VisualStudio.UnitTestingExtension.TrueLogFileNameUtil.GetTrueLogFileNameFromTestRun(Microsoft.VisualStudio.TestTools.Common.TestRun)">
+      <summary>
+            Returns the truelog file name or null if no file name is available
+            </summary>
+    </member>
+    <member name="T:SilkTest.Ntf.VisualStudio.UnitTestingExtension.SilkExtensionExecution">
+      <summary>
+            Entry point for running MS Visual Studio tests that have the "SilkTestClass" attribute
+            </summary>
+    </member>
+    <member name="M:SilkTest.Ntf.VisualStudio.UnitTestingExtension.SilkExtensionExecution.CreateTrueLogForErrorMessage(System.Exception,System.String)">
+      <summary>
+            Creates a truelog file that just contains the given error.
+            </summary>
+      <param name="e"></param>
+      <param name="truelogFileName"></param>
+    </member>
+    <member name="M:SilkTest.Ntf.VisualStudio.UnitTestingExtension.SilkExtensionExecution.CreateExceptionForIncomptibleUnitTestingExtensionVersion(System.InvalidCastException)">
+      <summary>
+            For example, an exception occurs if a test is compiled against the 2010 unit testing extension is executed in a 2012 environment (or vice versa) on a machine has both the 2010 and 2012 environment installed.
+            Note: if 2010 tests are executed on a machine that only has the 2012 environment the required assembly dependencies cannot not be loaded and playback will fail immediately (before we get to this code here)
+            </summary>
+    </member>
+    <member name="M:SilkTest.Ntf.VisualStudio.UnitTestingExtension.SilkExtensionExecution.LogErrorsForTestsThatAreNotRunnable">
+      <summary>
+            Logs errors for tests that cannot be run (e.g because they have a wrong signature)
+            </summary>
+    </member>
+    <member name="T:SilkTest.Ntf.VisualStudio.UnitTestingExtension.TestExecutionEvent">
+      <summary>
+            Contains enums for test execution callbacks for MS Unit Testing.
+            </summary>
+    </member>
+    <member name="T:SilkTest.Ntf.VisualStudio.UnitTestingExtension.Keywords.KdtTestDiscoverer">
+      <summary>
+            Discovers Keyword-driven tests
+            </summary>
+    </member>
+    <member name="M:SilkTest.Ntf.VisualStudio.UnitTestingExtension.Keywords.KdtTestExecutor.RecordTestResults(Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.IFrameworkHandle,Microsoft.VisualStudio.TestPlatform.ObjectModel.TestCase[],System.Exception[],SilkTest.Ntf.VisualStudio.UnitTestingExtension.Keywords.KdtTestExecutor.TestCounter)">
+      <summary>
+            Notifies the testing framework about the test results.
+            </summary>
+      <param name="frameworkHandle"></param>
+      <param name="tests">Contains the tests</param>
+      <param name="exceptions">Contains the exception for every test or null if the test passed</param>
+      <param name="testCounter" />
+    </member>
+    <member name="T:SilkTest.Ntf.SilkTestClassAttribute">
+      <summary>
+            Used to identify classes that contain Silk4NET test methods. During test execution a Silk TrueLog file is written if this attribute is used.
+            </summary>
+    </member>
+    <member name="P:SilkTest.Ntf.SilkTestClassAttribute.ExtensionId">
+      <summary>
+            Gets the unique ID of the extension.
+            </summary>
+    </member>
+    <member name="M:SilkTest.Ntf.SilkTestClassAttribute.GetExecution">
+      <summary>
+            Returns the TestExtensionExecution object.
+            </summary>
+      <returns></returns>
+    </member>
+    <member name="M:SilkTest.Ntf.SilkTestClassAttribute.GetClientSide">
+      <summary>
+            Returns the ClientSide object.
+            </summary>
+      <returns></returns>
+    </member>
+  </members>
+</doc>

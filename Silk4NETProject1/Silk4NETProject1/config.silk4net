@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recorderProject version="17.5">
+  <applicationConfiguration>
+    <browserType>GoogleChrome</browserType>
+    <baseStateInfo>
+      <locator>//BrowserApplication</locator>
+      <url>https://www.qantas.com/au/en.html</url>
+    </baseStateInfo>
+  </applicationConfiguration>
+  <agentOptions/>
+</recorderProject>

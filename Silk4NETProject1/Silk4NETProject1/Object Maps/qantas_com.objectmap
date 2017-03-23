@@ -1,0 +1,35 @@
+<ObjectMap version="1">
+  <ObjectMapEntry id="qantas_com" locator="//BrowserApplication" urlPattern="*qantas.com*">
+    <ObjectMapEntry id="BrowserWindow" locator="//BrowserWindow">
+      <ObjectMapEntry id="button" locator="//svg[@type='button']" />
+      <ObjectMapEntry id="button2" locator="//svg[@type='button'][2]" />
+      <ObjectMapEntry id="date-picker__calenda" locator="//TD[@aria-label='Sunday, the twelfth *']/DIV[@class='date-picker__calenda*']" />
+      <ObjectMapEntry id="date-picker__calenda2" locator="//TD[@aria-label='Sunday, the nineteen*']/DIV[@class='date-picker__calenda*']" />
+      <ObjectMapEntry id="datepicker-input-dep" locator="//INPUT[@id='datepicker-input-dep*']" />
+      <ObjectMapEntry id="datepicker-input-ret" locator="//INPUT[@id='datepicker-input-ret*']" />
+      <ObjectMapEntry id="M10,18 L14,18 L14,22" locator="//path[@d='M10,18 L14,18 L14,22*']" />
+      <ObjectMapEntry id="M20 1548387,17 49156" locator="//path[@d='M20.1548387,17.49156*']" />
+      <ObjectMapEntry id="M245,88 8026316 L242" locator="//path[@d='M245,88.8026316 L242*']" />
+      <ObjectMapEntry id="M245,88 8026316 L2422" locator="//path[@d='M245,88.8026316 L242*'][2]" />
+      <ObjectMapEntry id="M269,45 L269,41 L267" locator="//path[@d='M269,45 L269,41 L267*'][2]" />
+      <ObjectMapEntry id="M269,45 L269,41 L2672" locator="//path[@d='M269,45 L269,41 L267*']" />
+      <ObjectMapEntry id="M269,45 L269,41 L2673" locator="//path[@d='M269,45 L269,41 L267*'][3]" />
+      <ObjectMapEntry id="number-picker-input-" locator="//INPUT[@id='number-picker-input-*']" />
+      <ObjectMapEntry id="number-picker-input-2" locator="//INPUT[@id='number-picker-input-*'][2]" />
+      <ObjectMapEntry id="object SVGAnimatedR" locator="//DIV[@class='date-picker__calenda*'][2]/svg[@viewBox='[object SVGAnimatedR*']" />
+      <ObjectMapEntry id="panel-book-a-trip" locator="//A[@id='panel-book-a-trip']" />
+      <ObjectMapEntry id="panel-check-in" locator="//A[@id='panel-check-in']" />
+      <ObjectMapEntry id="panel-manage-booking" locator="//A[@id='panel-manage-booking']" />
+      <ObjectMapEntry id="qfa1-submit-button__" locator="//BUTTON[@class='qfa1-submit-button__*'][2]" />
+      <ObjectMapEntry id="SEARCH FLIGHTS" locator="//BUTTON[@textContents='SEARCH FLIGHTS']" />
+      <ObjectMapEntry id="SELECT" locator="//BUTTON[@textContents='SELECT']" />
+      <ObjectMapEntry id="select-picker-select" locator="//LI[@id='select-picker-select*'][2]" />
+      <ObjectMapEntry id="skipToContent" locator="//H1[@id='skipToContent']" />
+      <ObjectMapEntry id="typeahead-input-from" locator="//INPUT[@id='typeahead-input-from']" />
+      <ObjectMapEntry id="typeahead-input-to" locator="//INPUT[@id='typeahead-input-to']" />
+      <ObjectMapEntry id="typeahead-list-item-" locator="//LI[@id='typeahead-list-item-*'][2]" />
+      <ObjectMapEntry id="typeahead-list-item-2" locator="//LI[@id='typeahead-list-item-*']" />
+      <ObjectMapEntry id="widget-form__row-con" locator="//DIV[@class='widget-form__row-con*'][3]" />
+    </ObjectMapEntry>
+  </ObjectMapEntry>
+</ObjectMap>
